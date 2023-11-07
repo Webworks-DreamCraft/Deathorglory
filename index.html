@@ -299,6 +299,18 @@
 		}
 	</style>
 	<style id="wp-block-columns-inline-css">
+		.wp-block-image {
+			max-width: 400px;
+			transition: transform .2s; /* Animation */
+		}
+		.wp-block-image-hover {
+			transition: transform .2s; /* Animation */
+			transform: scale(1.5);
+			background-color: black;
+			padding: 4px;
+			position: absolute;
+			left: 33%;
+		}
 		.wp-block-columns {
 			align-items: normal !important;
 			box-sizing: border-box;
@@ -362,6 +374,11 @@
 			}
 			hr {
 				display:none;
+			}
+			.wp-block-image:hover {
+				transform: none;
+				background-color: black;
+				padding: 0px;
 			}
 		}
 
@@ -2521,7 +2538,7 @@
 								style="padding-right:10px;padding-left:10px">
 								<h2 class="wp-block-heading has-text-align-center"
 									style="font-size:20px;font-style:normal;font-weight:300;letter-spacing:6px;color:white;padding-top:40px;text-transform:uppercase">
-									Recent Works</h2>
+									Recent Work</h2>
 							</div>
 
 
@@ -2543,7 +2560,7 @@
 								<figure
 									data-carousel-extra='{"blog_id":1,"permalink":"https:\/\/lukepate.wordpress.com\/home-2\/home-2\/"}'
 									class="wp-block-gallery aligncenter has-nested-images columns-1 wp-block-gallery-26 is-layout-flex wp-block-gallery-is-layout-flex">
-									<figure class="wp-block-image size-full"><img data-attachment-id="101"
+									<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="101"
 											data-permalink="https://lukepate.wpcomstaging.com/home-2/unnamed-7/"
 											data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/unnamed-7.jpg?fit=1200%2C1600&amp;ssl=1"
 											data-orig-size="1200,1600" data-comments-opened="1"
@@ -2557,7 +2574,7 @@
 
 
 
-									<figure class="wp-block-image size-full"><img data-attachment-id="105"
+									<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="105"
 											data-permalink="https://lukepate.wpcomstaging.com/home-2/image0/"
 											data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/image0.jpeg?fit=640%2C640&amp;ssl=1"
 											data-orig-size="640,640" data-comments-opened="1"
@@ -2571,7 +2588,7 @@
 
 
 
-									<figure class="wp-block-image size-full"><img data-attachment-id="109"
+									<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="109"
 											data-permalink="https://lukepate.wpcomstaging.com/home-2/deathorglory-48/"
 											data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/deathorglory-48.jpg?fit=2400%2C3600&amp;ssl=1"
 											data-orig-size="2400,3600" data-comments-opened="1"
@@ -2587,7 +2604,7 @@
 
 
 
-								<figure class="wp-block-image size-large"><img data-attachment-id="115"
+								<figure onclick="dodajAktywne(this)" class="wp-block-image size-large"><img data-attachment-id="115"
 										data-permalink="https://lukepate.wpcomstaging.com/home-2/unnamed-1/"
 										data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/unnamed-1.jpg?fit=1125%2C1498&amp;ssl=1"
 										data-orig-size="1125,1498" data-comments-opened="1"
@@ -2601,7 +2618,7 @@
 
 
 
-								<figure class="wp-block-image size-large"><img data-attachment-id="120"
+								<figure onclick="dodajAktywne(this)" class="wp-block-image size-large"><img data-attachment-id="120"
 										data-permalink="https://lukepate.wpcomstaging.com/home-2/screenshot-2023-11-04-at-1-15-14-pm/"
 										data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/screenshot-2023-11-04-at-1.15.14-pm.png?fit=1916%2C1836&amp;ssl=1"
 										data-orig-size="1916,1836" data-comments-opened="1"
@@ -2618,10 +2635,10 @@
 
 
 							<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-								<figure
+								<figure 
 									data-carousel-extra='{"blog_id":1,"permalink":"https:\/\/lukepate.wordpress.com\/home-2\/home-2\/"}'
 									class="wp-block-gallery aligncenter has-nested-images columns-1 wp-block-gallery-29 is-layout-flex wp-block-gallery-is-layout-flex">
-									<figure class="wp-block-image size-full"><img data-attachment-id="102"
+									<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="102"
 											data-permalink="https://lukepate.wpcomstaging.com/home-2/image5/"
 											data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/image5.jpeg?fit=1080%2C1087&amp;ssl=1"
 											data-orig-size="1080,1087" data-comments-opened="1"
@@ -2635,7 +2652,7 @@
 
 
 
-									<figure class="wp-block-image size-full"><img data-attachment-id="106"
+									<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="106"
 											data-permalink="https://lukepate.wpcomstaging.com/home-2/deathorglory-2/"
 											data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/deathorglory-2.jpg?fit=3600%2C2400&amp;ssl=1"
 											data-orig-size="3600,2400" data-comments-opened="1"
@@ -2650,7 +2667,7 @@
 
 
 
-									<figure class="wp-block-image size-full"><img data-attachment-id="108"
+									<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="108"
 											data-permalink="https://lukepate.wpcomstaging.com/home-2/image2/"
 											data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/image2.jpeg?fit=556%2C640&amp;ssl=1"
 											data-orig-size="556,640" data-comments-opened="1"
@@ -2665,7 +2682,7 @@
 
 
 
-								<figure class="wp-block-image size-full"><img data-attachment-id="112"
+								<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="112"
 										data-permalink="https://lukepate.wpcomstaging.com/image7-2/"
 										data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/image7-edited.jpeg?fit=480%2C640&amp;ssl=1"
 										data-orig-size="480,640" data-comments-opened="1"
@@ -2679,7 +2696,7 @@
 
 
 
-								<figure class="wp-block-image size-large"><img data-attachment-id="117"
+								<figure onclick="dodajAktywne(this)" class="wp-block-image size-large"><img data-attachment-id="117"
 										data-permalink="https://lukepate.wpcomstaging.com/home-2/image1-2/"
 										data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/image1-2.jpeg?fit=1125%2C1496&amp;ssl=1"
 										data-orig-size="1125,1496" data-comments-opened="1"
@@ -2693,7 +2710,7 @@
 
 
 
-								<figure class="wp-block-image size-large"><img data-attachment-id="123"
+								<figure onclick="dodajAktywne(this)" class="wp-block-image size-large"><img data-attachment-id="123"
 										data-permalink="https://lukepate.wpcomstaging.com/home-2/screenshot-2023-11-04-at-1-16-39-pm/"
 										data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/screenshot-2023-11-04-at-1.16.39-pm.png?fit=1918%2C1862&amp;ssl=1"
 										data-orig-size="1918,1862" data-comments-opened="1"
@@ -2713,7 +2730,7 @@
 								<figure
 									data-carousel-extra='{"blog_id":1,"permalink":"https:\/\/lukepate.wordpress.com\/home-2\/home-2\/"}'
 									class="wp-block-gallery aligncenter has-nested-images columns-1 wp-block-gallery-32 is-layout-flex wp-block-gallery-is-layout-flex">
-									<figure class="wp-block-image size-full"><img data-attachment-id="103"
+									<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="103"
 											data-permalink="https://lukepate.wpcomstaging.com/home-2/image6/"
 											data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/image6.jpeg?fit=1080%2C1264&amp;ssl=1"
 											data-orig-size="1080,1264" data-comments-opened="1"
@@ -2727,7 +2744,7 @@
 
 
 
-									<figure class="wp-block-image size-full"><img data-attachment-id="107"
+									<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="107"
 											data-permalink="https://lukepate.wpcomstaging.com/home-2/image1/"
 											data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/image1.jpeg?fit=640%2C640&amp;ssl=1"
 											data-orig-size="640,640" data-comments-opened="1"
@@ -2741,7 +2758,7 @@
 
 
 
-									<figure class="wp-block-image size-full"><img data-attachment-id="110"
+									<figure onclick="dodajAktywne(this)" class="wp-block-image size-full"><img data-attachment-id="110"
 											data-permalink="https://lukepate.wpcomstaging.com/home-2/image6-1/"
 											data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/image6-1.jpeg?fit=480%2C640&amp;ssl=1"
 											data-orig-size="480,640" data-comments-opened="1"
@@ -2756,7 +2773,7 @@
 
 
 
-								<figure class="wp-block-image size-large"><img data-attachment-id="113"
+								<figure onclick="dodajAktywne(this)" class="wp-block-image size-large"><img data-attachment-id="113"
 										data-permalink="https://lukepate.wpcomstaging.com/home-2/deathorglory-12/"
 										data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/deathorglory-12.jpg?fit=2400%2C3600&amp;ssl=1"
 										data-orig-size="2400,3600" data-comments-opened="1"
@@ -2771,7 +2788,7 @@
 
 
 
-								<figure class="wp-block-image size-large"><img data-attachment-id="119"
+								<figure onclick="dodajAktywne(this)" class="wp-block-image size-large"><img data-attachment-id="119"
 										data-permalink="https://lukepate.wpcomstaging.com/home-2/screenshot-2023-11-04-at-1-14-35-pm/"
 										data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/screenshot-2023-11-04-at-1.14.35-pm.png?fit=1908%2C1844&amp;ssl=1"
 										data-orig-size="1908,1844" data-comments-opened="1"
@@ -2802,6 +2819,7 @@
 					<div class="wp-block-columns is-layout-flex wp-container-42 wp-block-columns-is-layout-flex">
 						<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
 							<figure class="wp-block-image size-full is-resized">
+								<a href="https://www.instagram.com/maxwelltattswell/">
 								<img data-attachment-id="91"
 									data-permalink="https://lukepate.wpcomstaging.com/home-2/david/"
 									data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/david.jpg?fit=3600%2C2400&amp;ssl=1"
@@ -2814,7 +2832,12 @@
 									src="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/david.jpg?resize=3600%2C2400&#038;ssl=1"
 									alt="" class="wp-image-91 crew-photo" style="width:311px;height:auto"
 									data-recalc-dims="1">
-								<div class="wp-element-caption"><strong>David Maxwell</strong></div>
+								</a>
+								<div class="wp-element-caption">
+									<a href="https://www.instagram.com/maxwelltattswell/">
+										<strong>David Maxwell</strong>
+									</a>
+								</div>
 							</figure>
 
 
@@ -2824,6 +2847,7 @@
 
 
 							<figure class="wp-block-image size-full">
+								<a href="https://www.instagram.com/littlemike_deathorglory/">
 								<img data-attachment-id="94"
 									data-permalink="https://lukepate.wpcomstaging.com/home-2/mike/"
 									data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/mike.jpg?fit=3600%2C2400&amp;ssl=1"
@@ -2835,7 +2859,12 @@
 									decoding="async" loading="lazy" width="3600" height="2400"
 									src="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/mike.jpg?resize=3600%2C2400&#038;ssl=1"
 									alt="" class="wp-image-94 crew-photo" data-recalc-dims="1">
-								<div class="wp-element-caption"><strong>Mike Mehaffey</strong></div>
+								</a>
+								<div class="wp-element-caption">
+									<a href="https://www.instagram.com/littlemike_deathorglory/">
+										<strong>Mike Mehaffey</strong>
+									</a>
+								</div>
 							</figure>
 						</div>
 
@@ -2843,7 +2872,9 @@
 
 						<div
 							class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
-							<figure class="wp-block-image size-full is-resized"><img data-attachment-id="99"
+							<figure class="wp-block-image size-full is-resized">
+								<a href="https://www.instagram.com/oldirtyrob/">
+									<img data-attachment-id="99"
 									data-permalink="https://lukepate.wpcomstaging.com/home-2/screenshot-2023-11-04-at-12-51-53-pm/"
 									data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/screenshot-2023-11-04-at-12.51.53-pm.png?fit=778%2C508&amp;ssl=1"
 									data-orig-size="778,508" data-comments-opened="1"
@@ -2856,7 +2887,12 @@
 									src="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/screenshot-2023-11-04-at-12.51.53-pm.png?resize=778%2C508&#038;ssl=1"
 									alt="" class="wp-image-99 crew-photo" style="width:319px;height:auto"
 									data-recalc-dims="1">
-								<div class="wp-element-caption"><strong>Rob Barnes</strong></div>
+								</a>
+								<div class="wp-element-caption">
+									<a href="https://www.instagram.com/oldirtyrob/">
+										<strong>Rob Barnes</strong>
+									</a>
+								</div>
 							</figure>
 
 
@@ -2865,7 +2901,8 @@
 
 
 
-							<figure class="wp-block-image size-full is-resized"><img data-attachment-id="100"
+							<figure class="wp-block-image size-full is-resized">
+								<a href="https://www.instagram.com/darkwhitetattoos/"><img data-attachment-id="100"
 									data-permalink="https://lukepate.wpcomstaging.com/home-2/screenshot-2023-11-04-at-12-52-44-pm/"
 									data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/screenshot-2023-11-04-at-12.52.44-pm.png?fit=622%2C430&amp;ssl=1"
 									data-orig-size="622,430" data-comments-opened="1"
@@ -2878,7 +2915,12 @@
 									src="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/screenshot-2023-11-04-at-12.52.44-pm.png?resize=622%2C430&#038;ssl=1"
 									alt="" class="wp-image-100 crew-photo" style="width:310px;height:auto"
 									data-recalc-dims="1">
-								<div class="wp-element-caption"><strong>Enrique Valdes</strong></div>
+								</a>
+								<div class="wp-element-caption">
+									<a href="https://www.instagram.com/darkwhitetattoos/">
+										<strong>Enrique Valdes</strong>
+									</a>
+								</div>
 							</figure>
 						</div>
 
@@ -2886,7 +2928,9 @@
 
 						<div
 							class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
-							<figure class="wp-block-image size-full"><img data-attachment-id="93"
+							<figure class="wp-block-image size-full">
+								<a href="https://www.instagram.com/kng_tattoo/">
+									<img data-attachment-id="93"
 									data-permalink="https://lukepate.wpcomstaging.com/home-2/kris/"
 									data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/kris.jpg?fit=3600%2C2400&amp;ssl=1"
 									data-orig-size="3600,2400" data-comments-opened="1"
@@ -2897,10 +2941,16 @@
 									decoding="async" loading="lazy" width="3600" height="2400"
 									src="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/kris.jpg?resize=3600%2C2400&#038;ssl=1"
 									alt="" class="wp-image-93 crew-photo" data-recalc-dims="1">
-								<div class="wp-element-caption"><strong>Kris Garcia</strong></div>
+								</a>
+								<div class="wp-element-caption">
+									<a href="https://www.instagram.com/kng_tattoo/">
+										<strong>Kris Garcia</strong>
+									</a>
+								</div>
 							</figure>
 
-							<figure class="wp-block-image size-full"><img data-attachment-id="95"
+							<figure class="wp-block-image size-full">
+								<a href="https://www.instagram.com/janeharbourtattoo/"><img data-attachment-id="95"
 									data-permalink="https://lukepate.wpcomstaging.com/home-2/jane/"
 									data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/jane.jpg?fit=3600%2C2400&amp;ssl=1"
 									data-orig-size="3600,2400" data-comments-opened="1"
@@ -2911,17 +2961,21 @@
 									decoding="async" loading="lazy" width="3600" height="2400"
 									src="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/jane.jpg?resize=3600%2C2400&#038;ssl=1"
 									alt="" class="wp-image-95 crew-photo" data-recalc-dims="1">
-								<div class="wp-element-caption"><strong>Jane Harbour</strong></div>
+								</a>
+								<div class="wp-element-caption">
+									<a href="https://www.instagram.com/janeharbourtattoo/">
+										<strong>Jane Harbour</strong>
+									</a>
+								</div>
 							</figure>
 						</div>
 					</div>
 
 
 
-					<figure class="wp-block-image aligncenter size-large is-resized" style="display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;"><a href="https://www.instagram.com/_breakfast_/"><img data-attachment-id="98"
+					<figure class="wp-block-image aligncenter size-large is-resized" 	style="display: flex; justify-content: center; flex-direction: column;align-items: center;">
+							<a href="https://www.instagram.com/_breakfast_/">
+								<img data-attachment-id="98"
 								data-permalink="https://lukepate.wpcomstaging.com/home-2/jason/"
 								data-orig-file="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/jason.jpg?fit=3600%2C2400&amp;ssl=1"
 								data-orig-size="3600,2400" data-comments-opened="1"
@@ -2932,8 +2986,13 @@
 								decoding="async" loading="lazy" width="3600" height="2400"
 								src="https://i0.wp.com/lukepate.wpcomstaging.com/wp-content/uploads/2023/11/jason.jpg?resize=3600%2C2400&#038;ssl=1"
 								alt="" class="wp-image-98 crew-photo" style="width:314px;height:auto"
-								data-recalc-dims="1"></a>
-						<div class="wp-element-caption"><strong>Jason Ticsher</strong></div>
+								data-recalc-dims="1">
+							</a>
+							<div class="wp-element-caption">
+								<a href="https://www.instagram.com/_breakfast_/">
+									<strong>Jason Ticsher</strong>
+								</a>
+							</div>
 					</figure>
 				</div>
 			</div>
@@ -2979,13 +3038,14 @@
 							GET IN TOUCH
 						</p>
 						<h5 class="wp-block-heading">Phone: (352) 872-5995</h5>
-						<h5 class="wp-block-heading">Deathorglory@gmail.com</h5>
+						<h5 class="wp-block-heading">deathorglory@gmail.com</h5>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
 	</div>
+	<script src="index.js"></script>
 </body>
 
 </html>
